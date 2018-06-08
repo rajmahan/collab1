@@ -47,6 +47,7 @@ GEM
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
+    bootstrap_form (2.7.0)
     builder (3.2.3)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
@@ -172,6 +173,7 @@ DEPENDENCIES
   activerecord-jdbc-adapter
   activerecord-jdbcpostgresql-adapter (~> 1.3, >= 1.3.9)
   bootstrap-sass (~> 3.3.6)
+  bootstrap_form
   coffee-rails (~> 4.1.0)
   devise
   jbuilder (~> 2.0)

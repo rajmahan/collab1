@@ -54,6 +54,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'bootstrap_form'
+gem 'devise'
+
+
 
 group :development, :test do
 end

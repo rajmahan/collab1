@@ -7,6 +7,10 @@
                        as: resource_name, 
                        url: session_path(resource_name)) do |f| %>
 
+    <%= f.text_field :name, 
+             placeholder: 'username (will be shown publicly)', 
+             class: 'form-control' %>                   
+
     <%= f.email_field :email, 
                       autofocus: true, 
                       class: 'form-control', 
@@ -18,13 +22,13 @@
                           placeholder: 'password' %>
 
 
-  <% if devise_mapping.rememberable? -%>
-     <%= f.check_box :remember_me %>
-  <% end -%>
+  <%# if devise_mapping.rememberable? -%>
+     <%#= f.check_box :remember_me %>
+  <%# end -%>
 
-   <%= f.submit "Log in", class: 'form-control login-button' %>
+   <%= f.submit "Sign up", class: 'btn sign-up-button' %>
 <% end %>
-<%= render "devise/shared/links" %>
+<%#= render "devise/shared/links" %>
 
     </div>
   </div> 

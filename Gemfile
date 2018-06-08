@@ -25,6 +25,8 @@ else
   gem 'jruby-openssl', '~> 0.9.21'
 end
 
+gem 'bootstrap-sass', '~> 3.3.6'
+
 # Use jdbcpostgresql as the database for Active Record
 #gem 'activerecord-jdbcpostgresql-adapter'
 # Use SCSS for stylesheets

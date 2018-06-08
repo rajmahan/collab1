@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   #devise_for :users
   devise_for :users, :controllers => {:registrations => "registrations"}
   root to: 'pages#index'
+  get 'start_jbpm', action: :start, controller: 'jbpm'
   devise_scope :user do
     get 'login', to: 'devise/sessions#new'
     get 'signup', to: 'devise/registrations#new'

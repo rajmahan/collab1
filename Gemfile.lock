@@ -236,7 +236,7 @@ DEPENDENCIES
   rails (= 4.2.8)
   rails-controller-testing
   rspec-rails (~> 3.6)
-  sass-rails (~> 5.0)
+  sass-rails (>= 3.2)
   sdoc (~> 0.4.0)
   therubyrhino
   turbolinks

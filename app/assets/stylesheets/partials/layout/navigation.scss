@@ -1,7 +1,17 @@
 @import "base/variables";
+
 body {
   margin-top: 50px;
 }
+
+.navbar-default, .navbar-toggle:focus, .collapsed, button.navbar-toggle {
+  background: $navbarColor !important;
+  border: none;
+  a {
+    color: white !important;
+  }
+}
+
 nav {
   .navbar-header {
     width: 100%;
@@ -14,11 +24,12 @@ nav {
     button:hover, .navbar-brand:hover {
       opacity: 0.8;
     }
-  }
-  .col-sm-5, .col-sm-7 {
-    padding: 0;
+    .col-sm-5, .col-sm-7 {
+      padding: 0;
+    }
   }
 }
+
 .pc-menu {
   margin-right: 10px;
 }
@@ -60,12 +71,4 @@ nav {
 .dropdown-menu a:hover {
   color: black !important;
   background: white !important;
-}
-
-.navbar-default, .navbar-toggle:focus, .collapsed, button.navbar-toggle {
-  background: $navbarColor !important;
-  border: none;
-  a {
-    color: white !important;
-  }
 }

@@ -59,7 +59,7 @@ gem 'devise'
 
 
 group :development, :test do
-
+  gem 'faker'
   gem 'rspec-rails', '~> 3.6'
   gem 'factory_girl_rails'
   gem 'rails-controller-testing'

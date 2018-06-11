@@ -1,21 +1,17 @@
-.single-post-card {
-  min-height: 135px;
-  max-height: 135px;
-  box-shadow: 1px 1px 4px rgba(0,0,0, 0.3);
-  color: black;
-  padding: 10px;
-  text-align: left;
-  transition: border 0.1s, background 0.5s;
-  .post-text {
-    overflow: hidden;
+#single-post-content {
+  background: white;
+  height: calc(100vh - 50px);
+
+  h3 { 
+    text-align: center;
   }
-  a, a:active, a:hover {
-    color: black;
+  p {
+    margin: 50px 0;
   }
-  &:hover {
-    cursor: pointer;
-    background: white;
-    box-shadow: none;
-    border-radius: 1%;
+  .posted-by {
+    font-size: 12px;
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: rgba(0,0,0,0.5);
   }
 }

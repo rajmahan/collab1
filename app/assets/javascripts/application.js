@@ -15,4 +15,5 @@
 // require jquery_ujs
 //= require turbolinks
 //= require posts/style
+//= require posts/modal
 // require_tree .

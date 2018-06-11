@@ -57,6 +57,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap_form'
 gem 'devise'
 
+gem 'will_paginate', '~> 3.1.0'
+
 
 group :development, :test do
   gem 'faker'

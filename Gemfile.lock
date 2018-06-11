@@ -112,6 +112,7 @@ GEM
     multi_json (1.13.1)
     nokogiri (1.8.2-java)
     orm_adapter (0.5.0)
+    phantomjs (2.1.1.0)
     poltergeist (1.18.1)
       capybara (>= 2.1, < 4)
       cliver (~> 0.3.1)
@@ -235,6 +236,7 @@ DEPENDENCIES
   jdbc-postgres (~> 9.4, >= 9.4.1206)
   jquery-rails
   jruby-openssl (~> 0.9.21)
+  phantomjs
   poltergeist
   rails (= 4.2.8)
   rails-controller-testing

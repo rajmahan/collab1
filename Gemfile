@@ -64,6 +64,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'rails-controller-testing'
   gem 'headless'
+  gem 'phantomjs', :require => 'phantomjs/poltergeist'
   gem 'capybara'
   gem 'poltergeist'
   gem 'database_cleaner'

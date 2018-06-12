@@ -1,6 +1,7 @@
 require "rails_helper"
 
 RSpec.feature "Infinite scroll", :type => :feature do
+  
   Post.per_page = 15  
 
   let(:check_posts_count) do

@@ -16,4 +16,5 @@
 //= require turbolinks
 //= require posts/style
 //= require posts/modal
+//= require posts/infinite_scroll
 // require_tree .

@@ -1,0 +1,2 @@
+module JbpmHelper
+end

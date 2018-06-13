@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   root to: 'pages#index'
-  get 'start_jbpm', action: :start, controller: 'jbpm'
   get 'open_new_post_form', action: :new_post, controller: 'jbpm'
-  get 'save_new_post', action: :save_post, controller: 'jbpm'
+  get 'start_jbpm', action: :start_jbpm, controller: 'jbpm'
+  post 'save_new_post', action: :save_post, controller: 'jbpm'
   #devise_for :users
   devise_for :users, :controllers => {:registrations => "registrations"}
 

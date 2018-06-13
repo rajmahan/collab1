@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+	before_action :redirect_if_not_signed_in, only: [:new]
 	def index
   		@hobby_posts = Post.by_branch('hobby').limit(8)
         @study_posts = Post.by_branch('study').limit(8)
@@ -19,7 +20,22 @@ class PostsController < ApplicationController
 
   	def team
     	posts_for_branch(params[:action])
- 	end 
+ 	end
+
+ 	 def new
+	    @branch = params[:branch]
+	    @categories = Category.where(branch: @branch)
+	    @post = Post.new
+    end
+
+	def create
+	    @post = Post.new(post_params)
+	    if @post.save 
+	      redirect_to post_path(@post) 
+	    else
+	      redirect_to root_path
+	    end
+    end 
 
  	private
 
@@ -38,7 +54,14 @@ class PostsController < ApplicationController
       category: params[:category],
       branch: params[:action]
     }).call
-  end
+
+
+    end
+
+    def post_params
+     params.require(:post).permit(:content, :title, :category_id)
+                       .merge(user_id: current_user.id)
+    end
 
 
 

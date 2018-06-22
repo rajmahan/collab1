@@ -63,7 +63,7 @@ module JbpmHelper
       piid, process_id = if pfd && pfd["process_instance"].present?
                            [pfd["process_instance"]["piid"].to_s, pfd["process_instance"]["process_id"]]
                          else
-                           ["0", "publisher-flow.mvnproject"]
+                           ["0", "publisher-flow.mva1"]
                          end
       datas = {action: action, piid: piid, process_id: process_id, user: user, datas: data,
                url: "http://localhost:8090/jbpm-console", deployment_id: "scholarorg:publisher-flow:LATEST"}
